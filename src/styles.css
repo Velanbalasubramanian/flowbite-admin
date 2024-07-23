@@ -4,8 +4,23 @@
 @tailwind components;
 @tailwind utilities;
 
-.max-h-800 {
+.max-h-800, .max-h-500, .max-h-700, .max-h-400 {
     height: 100%;
+}
+@media (max-height: 400px) {
+    .max-h-400 {
+        height: auto;
+    }
+}
+@media (max-height: 500px) {
+    .max-h-500 {
+        height: auto;
+    }
+}
+@media (max-height: 700px) {
+    .max-h-700 {
+        height: auto;
+    }
 }
 @media (max-height: 800px) {
     .max-h-800 {
