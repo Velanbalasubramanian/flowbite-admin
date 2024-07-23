@@ -68,5 +68,13 @@ export const routes: Routes = [
     {
         path: 'forgot-pw1',
         loadComponent: () => import('./ui/forgot-pw01/forgot-pw01.component').then(m => m.ForgotPw01Component)
+    },
+    {
+        path: 'admin-dashboard',
+        loadComponent: () => import('./ui/admin-dashboard/admin-dashboard.component').then(m => m.AdminDashboardComponent)
+    },
+    {
+        path: 'dashboard',
+        loadComponent: () => import('./ui/admin-dashboard/dashboard-details/dashboard-details.component').then(m => m.DashboardDetailsComponent)
     }
 ];
