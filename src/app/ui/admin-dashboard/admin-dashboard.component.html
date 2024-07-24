@@ -1,7 +1,9 @@
 <app-navbar></app-navbar>
-<div class="flex">
-    <app-sidebar></app-sidebar>
-    <div class="w-full">     
+<div class="flex top-[68px] relative">
+    <div class="sticky top-[68px] h-screen">
+        <app-sidebar></app-sidebar>
+    </div>
+    <div class="w-full overflow-y-auto">     
         <app-dashboard-details></app-dashboard-details>
     </div>
 </div>
